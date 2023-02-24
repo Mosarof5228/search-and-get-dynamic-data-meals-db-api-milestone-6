@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic data load from meal db api</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Dynamic data load from meal db api</h1>
+    </header>
+    <main>
+        <section class=" h-11 w-full">
+            <div class="flex justify-center items-center">
+                <input id="input-field" class="border-2 border-black py-1 px-2" placeholder="write for search"
+                    type="text" name="" id="">
+                <button onclick="searchFood()" class="bg-gray-400 px-4 py-2 rounded ml-3">Click for Search</button>
+            </div>
+        </section>
+        <section class="mt-10">
+            <div id="meals-container"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-7 lg:px-10 border-5 border-red-400">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- js file link -->
+    <script src="./js/recapeMeals.js"></script>
+</body>
+
+</html>
